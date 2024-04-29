@@ -34,6 +34,7 @@ section {
   right: 0;
   z-index: 99;
   border-bottom: var(--border);
+  background-color: var(--bg);
 }
 
 .header section {
@@ -69,7 +70,7 @@ section {
   height: 40px;
 }
 
-a.btn {
+.btn {
   background: var(--main-color);
   color: white;
   padding: 1rem 3rem;
@@ -77,6 +78,10 @@ a.btn {
   cursor: pointer;
   margin-top: 1rem;
   display: inline-block;
+}
+
+.btn:hover {
+ letter-spacing: 0.1rem;
 }
 
 .home-container {
@@ -107,3 +112,88 @@ a.btn {
   line-height: 1.8;
   padding: 1rem 0;
 }
+
+.title {
+  font-size: 4rem;
+  color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.title span {
+  color: white;
+  text-transform: uppercase;
+}
+
+.about .row {
+  display: flex;
+  align-items:center;
+  background-color: var(--black);
+  gap: 1.5rem;
+}
+
+.about .rom .content {
+  padding: 2rem;
+}
+
+.about .row .content h3 {
+   font-size: 3rem;
+   color: white;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: white;
+  padding: 1rem 0;
+  line-height:1.8;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  text-align: center;
+  border: var(--border);
+  padding: 5rem;
+  cursor: pointer;
+}
+
+
+
+.menu .bocontainer .box img {
+  height: 10rem;
+}
+
+.menu .bocontainer .box h3 {
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+  background-color: white;
+}
+
+.menu .box-container .box:hover>* {
+ color: var(--black);
+}
+
+
+
+
